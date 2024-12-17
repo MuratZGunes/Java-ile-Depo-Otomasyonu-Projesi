@@ -1,76 +1,76 @@
-# Java ile Depo Otomasyonu Projesi
+# Java-Based Warehouse Automation Project
 
-## Proje Açıklaması
-Bu proje, **depo ve bayi yönetimi** için geliştirilmiş bir **JavaFX tabanlı otomasyon sistemidir**. Depo yöneten kullanıcıların ürün ve bayi işlemlerini hızlı, güvenli ve kolay bir şekilde gerçekleştirmesini sağlar. Kullanıcılar, ürün fiyatları ve satış bilgilerine kolayca erişebilir.
-
----
-
-## Programın Amacı
-- **Veri Yönetimi**: 
-  - Ürün ve bayi verilerinin pratik şekilde kaydedilip güncellenmesi.  
-- **Uyarı Sistemi**: 
-  - Gerekli alanlar boş bırakıldığında kullanıcıyı uyarma.  
-- **Güvenlik**: 
-  - Kullanıcı adı ve şifre ile admin ve personel yetkilendirmesi.  
-- **Veri Saklama**: 
-  - Tüm veriler `.txt` dosyalarında güvenli şekilde tutulur.  
+## Project Description
+This project is a **JavaFX-based automation system** developed for **warehouse and dealer management**. It allows warehouse managers to perform product and dealer operations quickly, securely, and easily. Users can access product prices and sales information effortlessly.
 
 ---
 
-## Kullanıcı Rolleri
-1. **Admin Girişi**:  
-   - Ürün ve bayi tablolarına tam erişim.  
-   - Verileri ekleme, güncelleme, silme yetkisi.  
-
-2. **Personel Girişi**:  
-   - Ürün tablosunda ürün ekleme, düzenleme.  
-   - Bayi tablosunu sadece görüntüleme yetkisi.  
-
----
-
-## Özellikler
-- **Giriş Sistemi**:  
-   - Admin ve personel girişleri için ayrı şifreler.  
-   - Hatalı girişlerde bilgilendirme mesajları.  
-
-- **Ürün İşlemleri**:  
-   - Ürün ekleme, silme, güncelleme.  
-   - Ürün verilerini tabloya otomatik aktarma ve manuel kaydetme.  
-
-- **Bayi İşlemleri**:  
-   - Bayi ekleme, silme, güncelleme (sadece admin yetkisi).  
-   - Bayi iletişim bilgileri düzenleme.  
-
-- **Veri Saklama**:  
-   - Ürün ve bayi verileri `.txt` dosyalarında saklanır.  
+## Purpose of the Program
+- **Data Management**:  
+  - Practical recording and updating of product and dealer data.
+- **Alert System**:  
+  - Warns users when required fields are left empty.
+- **Security**:  
+  - Admin and personnel authorization using username and password.
+- **Data Storage**:  
+  - All data is securely stored in `.txt` files.
 
 ---
 
-## Sınıflar ve İçerikleri
+## User Roles
+1. **Admin Access**:  
+   - Full access to product and dealer tables.  
+   - Authority to add, update, and delete data.
+
+2. **Personnel Access**:  
+   - Authority to add and edit products in the product table.  
+   - View-only access to the dealer table.
+
+---
+
+## Features
+- **Login System**:  
+   - Separate passwords for admin and personnel.  
+   - Informational messages for incorrect logins.
+
+- **Product Operations**:  
+   - Add, delete, and update products.  
+   - Automatically transfer product data to the table and manually save.
+
+- **Dealer Operations**:  
+   - Add, delete, and update dealers (admin only).  
+   - Edit dealer contact information.
+
+- **Data Storage**:  
+   - Product and dealer data are stored in `.txt` files.
+
+---
+
+## Classes and Their Contents
 1. **PrimaryController**:  
-   - Login işlemleri (Admin ve personel girişleri).  
+   - Handles login operations (Admin and personnel logins).
 2. **AdmingirisController**:  
-   - Admin paneli: Ürün ve bayi işlemlerine erişim.  
+   - Admin panel: Access to product and dealer operations.
 3. **UrunIslemleriController**:  
-   - Ürün ekleme, silme, güncelleme, kaydetme ve bayi işlemlerine geçiş.  
+   - Adding, deleting, updating, and saving products, and navigating to dealer operations.
 4. **BayiUrunIslemleriController**:  
-   - Bayi ekleme, silme, güncelleme, kaydetme ve ürün işlemlerine geçiş.  
+   - Adding, deleting, updating, and saving dealers, and navigating to product operations.
 5. **PersonelgirisController**:  
-   - Personel paneli: Ürün işlemleri ve bayi görüntüleme.  
+   - Personnel panel: Product operations and viewing dealers.
 6. **PersonelUrunListesiDuzenleController**:  
-   - Ürün ekleme, güncelleme, görüntüleme yetkisi.  
+   - Authority to add, update, and view products.
 7. **PersonelBayiListesiGoruntuleController**:  
-   - Bayi tablosunu görüntüleme yetkisi.  
+   - View-only access to the dealer table.
 8. **tablo.java**:  
-   - Ürün bilgilerini tutan sınıf.  
+   - Class that holds product information.
 9. **bayi.java**:  
-   - Bayi bilgilerini tutan sınıf.  
+   - Class that holds dealer information.
 10. **tablokontrol.java**:  
-    - Ürün ve bayi tablolarında işlemleri tanımlayan arayüz.  
+    - Interface defining operations for product and dealer tables.
 
 ---
 
-## Proje Yapısı
+## Project Structure
 ```
 src/  
 │  
@@ -91,54 +91,53 @@ src/
 │   └── tablokontrol.java  
 │  
 ├── resources/  
-│   └── FXML dosyaları  
+│   └── FXML files  
 │  
 └── App.java  
 ```
 
 ---
 
-## Kurulum Adımları
-1. **Projeyi Klonlayın**:  
+## Installation Steps
+1. **Clone the Repository**:  
    ```bash
    git clone https://github.com/MuratZGunes/Java-ile-Depo-Otomasyonu-Projesi.git
    ```
-2. **JavaFX SDK Kurulumu**:  
-   - JavaFX SDK'yı indirin ve IDE ayarlarından projeye ekleyin.  
-3. **IDE'de Açın**:  
-   - IntelliJ IDEA, Eclipse veya NetBeans kullanılabilir.  
-4. **Projeyi Çalıştırın**:  
-   - `App.java` dosyasını çalıştırarak uygulamayı başlatın.  
+2. **Install JavaFX SDK**:  
+   - Download and add the JavaFX SDK to your IDE settings.
+3. **Open the Project in an IDE**:  
+   - IntelliJ IDEA, Eclipse, or NetBeans can be used.
+4. **Run the Project**:  
+   - Start the application by running the `App.java` file.
 
 ---
 
-## UML Diyagramı
-Projenin genel yapısını gösteren UML diyagramı:  
-![uml](https://github.com/user-attachments/assets/488a6087-54f6-46c9-b0e3-3b4872b0dc7a) 
+## UML Diagram
+The UML diagram showing the overall structure of the project:  
+![uml](https://github.com/user-attachments/assets/488a6087-54f6-46c9-b0e3-3b4872b0dc7a)
 
 ---
 
-## Gereksinimler
-- **Java JDK 11 veya üzeri**  
-- **JavaFX SDK**  
+## Requirements
+- **Java JDK 11 or higher**  
+- **JavaFX SDK**
 
 ---
 
-## Katkıda Bulunma
-Projeye katkı sağlamak isterseniz:  
-1. Forklayın  
-2. Değişikliklerinizi yapın  
-3. Pull Request gönderin  
+## Contributing
+To contribute to the project:  
+1. Fork the repository  
+2. Make your changes  
+3. Submit a Pull Request  
 
 ---
 
-
-## Lisans  
-Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
+## License  
+This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
 
 ---
 
-## İletişim
-**Proje Sahibi**: Murat S. Güneş  
+## Contact
+**Project Owner**: Murat S. Güneş  
 - **GitHub**: [MuratZGunes](https://github.com/MuratZGunes)  
-- **E-posta**: muratsegunes@gmail.com
+- **Email**: muratsegunes@gmail.com
