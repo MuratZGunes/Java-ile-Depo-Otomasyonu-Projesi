@@ -133,8 +133,8 @@ Projeye katkı sağlamak isterseniz:
 ---
 
 
-## Lisans
-MIT Lisansı  
+## Lisans  
+Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
 
 ---
 
