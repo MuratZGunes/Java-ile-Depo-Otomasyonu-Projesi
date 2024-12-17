@@ -1,5 +1,5 @@
 # Java-Based Warehouse Automation Project
-[![Turkish](https://img.shields.io/badge/Dil-Turkish-blue)](https://github.com/MuratZGunes/Java-ile-Depo-Otomasyonu-Projesi/tree/main)  
+[![Turkish](https://img.shields.io/badge/Dil-Türkçe-blue)](https://github.com/MuratZGunes/Java-ile-Depo-Otomasyonu-Projesi/tree/main)  
 ## Project Description
 This project is a **JavaFX-based automation system** developed for **warehouse and dealer management**. It allows warehouse managers to perform product and dealer operations quickly, securely, and easily. Users can access product prices and sales information effortlessly.
 
