@@ -1,0 +1,4 @@
+30xAsus Bilgisayar,Elektronik,25000,1
+200xİPhone,Elektronik,15000,2
+50xKedi kumu,Pet Shop,150,3
+5xLastik Goodyear,Oto Bahçe Yapı,1900,4

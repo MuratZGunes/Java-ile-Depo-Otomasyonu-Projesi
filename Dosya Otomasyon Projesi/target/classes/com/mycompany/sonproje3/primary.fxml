@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="700.0" maxWidth="800.0" minHeight="700.0" minWidth="800.0" prefHeight="700.0" prefWidth="197.0" style="-fx-background-color: FF9E31;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.sonproje3.PrimaryController">
+   <children>
+      <AnchorPane layoutX="324.0" prefHeight="700.0" prefWidth="476.0" style="-fx-background-color: FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="324.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ComboBox fx:id="adminSec" layoutX="237.0" layoutY="305.0" prefWidth="150.0" promptText="Seciniz" style="-fx-background-color: FF9E31;" />
+            <PasswordField fx:id="sifreAlani" layoutX="238.0" layoutY="348.0" promptText="Şifrenizi Giriniz" />
+            <Label layoutX="144.0" layoutY="309.0" text="Personel Adı :" />
+            <Label layoutX="144.0" layoutY="352.0" text="Personel Şifresi :" />
+            <Label fx:id="tf_bilgilendirme" layoutX="237.0" layoutY="380.0" prefHeight="25.0" prefWidth="348.0" textFill="#ff9e31" AnchorPane.bottomAnchor="295.0" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="58.0" AnchorPane.topAnchor="380.0" />
+            <Button fx:id="girisYap" layoutX="301.0" layoutY="411.0" mnemonicParsing="false" onAction="#girisyap" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: FF9E31;" text="Giris Yap" textOverrun="WORD_ELLIPSIS" />
+            <Label layoutX="124.0" layoutY="144.0" prefHeight="64.0" prefWidth="255.0" text="Hoşgeldiniz" textFill="#ff9e31">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="39.0" layoutX="85.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user-interface.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="170.0" layoutX="163.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pngwing.com.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="89.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@password.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kapatma" fitHeight="50.0" fitWidth="50.0" layoutX="426.0" onMouseClicked="#kapatma" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="650.0" AnchorPane.leftAnchor="426.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="81.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngaaa.com-6231306.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="285.0" prefHeight="95.0" prefWidth="316.0" text="Depo Otomasyon" textFill="WHITE">
+         <font>
+            <Font name="ArtifaktElement-Regular" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="359.0" prefHeight="56.0" prefWidth="135.0" text="Sistemi" textFill="WHITE">
+         <font>
+            <Font name="ArtifaktElement-Regular" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="700.0" maxWidth="800.0" minHeight="700.0" minWidth="800.0" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.sonproje3.PersonelBayiListesiGoruntuleController">
+   <children>
+      <TableView fx:id="urunTablosu" layoutX="-2.0" layoutY="140.0" prefHeight="560.0" prefWidth="800.0" style="-fx-background-color: #99EBFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="140.0">
+         <columns>
+            <TableColumn fx:id="bayiid" prefWidth="53.0" text="Bayi ID" />
+            <TableColumn fx:id="firmaismi" prefWidth="100.0" text="Firma İsmi" />
+            <TableColumn fx:id="yetkiliadsoyad" prefWidth="102.0" text="Yetkili Ad Soyad" />
+            <TableColumn fx:id="adres" prefWidth="193.0" text="Adres" />
+            <TableColumn prefWidth="357.0" text="İletişim">
+               <columns>
+                  <TableColumn fx:id="telefon" prefWidth="154.0" text="Telefon" />
+                  <TableColumn fx:id="eposta" prefWidth="266.0" text="E-Posta" />
+               </columns>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <ImageView fx:id="personeluruntablosu" fitHeight="108.0" fitWidth="164.0" onMouseClicked="#personeluruntablosu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="kapatma" fitHeight="67.0" fitWidth="50.0" layoutX="750.0" onMouseClicked="#kapatma" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@close.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="388.0" layoutY="51.0" prefHeight="47.0" prefWidth="232.0" text="- Bayi Listesi -" textFill="#ff9e31">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="142.0" fitWidth="142.0" layoutX="207.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@process.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

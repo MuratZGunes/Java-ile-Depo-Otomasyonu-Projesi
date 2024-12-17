@@ -1,0 +1,4 @@
+1,Asus,Ahmet Cevik,İstanbul Kadıköy,05058648548,asus@gmail.com
+2,Apple,Steve Jobs,ABD Kaliforniya,1 620-322-1059,SteveJobs@apple.com
+3,PetShop,Cemre Gul,Ankara Eryaman,05325185157,cemre@hotmail.com
+4,Goodyear,Frank Seiberling,ABD, Akron,1 620-564-1688,goodyear@info.com
