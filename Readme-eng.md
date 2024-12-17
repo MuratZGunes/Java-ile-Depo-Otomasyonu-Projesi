@@ -1,4 +1,4 @@
-[![Turkish](https://img.shields.io/badge/Language-Turkish-blue)](https://github.com/MuratZGunes/Java-ile-Depo-Otomasyonu-Projesi/tree/main)  
+[![Turkish](https://img.shields.io/badge/Dil-Turkish-blue)](https://github.com/MuratZGunes/Java-ile-Depo-Otomasyonu-Projesi/tree/main)  
 # Java-Based Warehouse Automation Project
 
 ## Project Description
