@@ -1,4 +1,5 @@
 # Java ile Depo Otomasyonu Projesi
+[![English](https://img.shields.io/badge/Language-English-blue)](https://github.com/MuratZGunes/Java-ile-Depo-Otomasyonu-Projesi/blob/main/Readme-eng.md)
 
 ## Proje Açıklaması
 Bu proje, **depo ve bayi yönetimi** için geliştirilmiş bir **JavaFX tabanlı otomasyon sistemidir**. Depo yöneten kullanıcıların ürün ve bayi işlemlerini hızlı, güvenli ve kolay bir şekilde gerçekleştirmesini sağlar. Kullanıcılar, ürün fiyatları ve satış bilgilerine kolayca erişebilir.
